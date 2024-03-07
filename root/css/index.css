@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carrinho {
+    background: url(../img/carrinho.png) no-repeat top right;
+    background-size: contain;
+    font-size: 17px;
+    padding-right: 55px;
+    height: 50px;
+    text-align: right;
+    width: 300px;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
+}
+
+.menu-opcoes a {
+    color: #003366;
+}
+
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.carrinho {
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+header {
+    position: relative;
+}
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.busca,
+.menu-conteúdo {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 23 0px;
+    float: left;
+}
+
+.busca h2,
+.busca form,
+.menu-conteudo h2 {
+    margin: 10px;
+}
+
+.menu-conteudo li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-conteudo a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-conteudo {
+    padding-top: 10px;
+    clear: left;
+}
+
+.busca input {
+    vertical-align: middle;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+.destaque {
+    margin-top: 10px;
+    height: 327px;
+}
+
+.menu-conteudo {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo-header {
+    height: 200px;
+}
+
+img {
+    height: 100px;
+}
+
+.icon-busca {
+    height: 20px;
+}
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    margin-bottom: 50px;
+}
+
+.aula1 {
+    float: left;
+    background-color: #f5dcdc;
+}
+
+.aula2 {
+    float: right;
+    background-color: #dcdcf5;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer {
+    background-size: 50%;
+    padding: 20px 0;
+    clear: both; 
+    width: 100%;
+    background-color: #4e4e4e;
+}
+
+.social a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -999999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.svg);
+    background-size: contain;
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.svg);
+    background-size: contain;
+}
+
+.social a[href*="github.com"] {
+    background-image: url(../img/github.svg);
+    background-size: contain;
+}
+
+footer .container {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+
+.img-footer {
+    height: auto;
+    width: 30%;
+    margin: 5px;
+}

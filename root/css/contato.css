@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+header {
+    background-image: url("../img/25101.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 50px 0;
+    border-bottom: solid 1.5px black;
+    margin-bottom: 20px;
+}
