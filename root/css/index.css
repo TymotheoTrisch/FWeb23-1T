@@ -55,12 +55,12 @@ header {
 }
 
 .busca,
-.menu-conteúdo {
+.menu-conteudo {
     background-color: #dcdcdc;
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 10px;
-    width: 23 0px;
+    width: 230px;
     float: left;
 }
 
@@ -160,7 +160,7 @@ footer {
     padding: 20px 0;
     clear: both; 
     width: 100%;
-    background-color: #4e4e4e;
+    background-color: #272424;
 }
 
 .social a {
@@ -201,7 +201,7 @@ footer .container {
 }
 
 .img-footer {
-    height: auto;
-    width: 30%;
+    height: 50px;
+    width: auto;
     margin: 5px;
 }
