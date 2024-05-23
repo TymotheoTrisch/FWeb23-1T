@@ -1,45 +1,240 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="./css/calculadora.css" />
-  </head>
-  <body>
-    <div class="container">
-      <input type="text" class="display" />
 
-      <div class="buttons">
-        <button class="operator" data-value="AC">AC</button>
-        <button class="operator" data-value="DEL">DEL</button>
-        <button class="operator" data-value="%">%</button>
-        <button class="operator" data-value="/">/</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/blog.css" />
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <button data-value="7">7</button>
-        <button data-value="8">8</button>
-        <button data-value="9">9</button>
-        <button class="operator" data-value="*">*</button>
+  <title>Blog</title>
+</head>
 
-        <button data-value="4">4</button>
-        <button data-value="5">5</button>
-        <button data-value="6">6</button>
-        <button class="operator" data-value="-">-</button>
+<body>
 
-        <button data-value="1">1</button>
-        <button data-value="2">2</button>
-        <button data-value="3">3</button>
-        <button class="operator" data-value="+">+</button>
+  <!-- Header -->
+  <header class="container">
 
-        <button data-value="0">0</button>
-        <button data-value="00">00</button>
-        <button data-value=".">.</button>
-        <button class="operator" data-value="=">=</button>
-      </div>
+    <!-- Logo Tesla -->
+    <div class="img-logo">
+      <img src="./img/logo-tesla.svg" alt="Logo-Logomarca">
     </div>
 
-    <script src="./js/calculadora.js"></script>
-  </body>
+    <!-- Info header - parte onde fica a navegação entre as paginas -->
+    <div class="info-header">
+      <nav>
+        <!-- Navegação -->
+        <ul role="list">
+
+          <!-- Link Home -->
+          <li><a href="./index.html">Home</a></li>
+
+          <!-- Link Blog -->
+          <li><a href="#">Blog</a></li>
+
+          <!-- Link Contato -->
+          <li><a href="./contato.html">Contato</a></li>
+
+          <!-- Link Aulas -->
+          <li class="submenu"><a href="./aulas.html">Aulas</a>
+
+            <!-- Lista de Aulas -->
+            <ul>
+
+              <!-- Aula 01 -->
+              <li class="item"><a href="">Aula 1</a>
+                <ul>
+                  <li class="item"><a href="./Aulas/Aula1/bemvindo.html">Exercicio 1</a></li>
+                  <li class="item"><a href="./Aulas/Aula1/index.html">Exercicio 2</a></li>
+                  <li class="item"><a href="./Aulas/Aula1/index2.html">Exercicio 3</a></li>
+                </ul>
+              </li>
+
+              <!-- Aula 02 -->
+              <li class="item"><a href="">Aula 2</a>
+                <ul>
+                  <li class="item"><a href="./Aulas/Aula2/exercicio1.html">Exercicio 1</a></li>
+                  <li class="item"><a href="./Aulas/Aula2/exercicio2.html">Exercicio 2</a></li>
+                  <li class="item"><a href="./Aulas/Aula2/exercicio3.html">Exercicio 3</a></li>
+                  <li class="item"><a href="./Aulas/Aula2/exercicio4.html">Exercicio 4</a></li>
+                  <li class="item"><a href="./Aulas/Aula2/exercicio5.html">Exercicio 5</a></li>
+                  <li class="item"><a href="./Aulas/Aula2/exercicio6.html">Exercicio 6</a></li>
+                </ul>
+              </li>
+
+              <!-- Aula 09 -->
+              <li class="item"><a href="">Aula 9</a>
+                <ul>
+                  <li class="item"><a href="./Aulas/Aula9/index.html">Exercicio 1</a></li>
+                </ul>
+              </li>
+
+              <!-- Aula 15 -->
+              <li class="item"><a href="">Aula 15</a>
+                <ul>
+                  <li class="item"><a href="./Aulas/Aula15/ex1/index.html">Exercicio 1</a></li>
+                  <li class="item"><a href="./Aulas/Aula15/ex2/index.html">Exercicio 2</a></li>
+                </ul>
+              </li>
+
+              <!-- Aula 16 -->
+              <li class="item"><a href="">Aula 16</a>
+                <ul>
+                  <li class="item"><a href="./Aulas/Aula16/ex1/index.html">Exercicio 1</a></li>
+                  <li class="item"><a href="./Aulas/Aula16/ex2/index.html">Exercicio 2</a></li>
+                  <li class="item"><a href="./Aulas/Aula16/ex3/index.html">Exercicio 3</a></li>
+                </ul>
+              </li>
+
+              <!-- Aula 17 -->
+              <li class="item"><a href="">Aula 17</a>
+                <ul>
+                  <li class="item"><a href="./Aulas/Aula17/ex1/index.html">Exercicio 1</a></li>
+                  <li class="item"><a href="./Aulas/Aula17/ex2/index.html">Exercicio 2</a></li>
+                  <li class="item"><a href="./Aulas/Aula17/ex3/index.html">Exercicio 3</a></li>
+                  <li class="item"><a href="./Aulas/Aula17/ex4/index.html">Exercicio 4</a></li>
+                  <li class="item"><a href="./Aulas/Aula17/ex5/index.html">Exercicio 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Busca no Goole -->
+      <div class="buscar-box">
+
+        <!-- Icon Busca -->
+        <div class="lupa-buscar">
+          <i class='bx bx-search'></i>
+        </div>
+
+        <!-- Input Busca -->
+        <div class="input-buscar">
+          <input type="text" id="input-buscar" class="input-buscar" placeholder="Pesquisar...">
+        </div>
+
+        <!-- Botão fechar -->
+        <div class="btn-fechar">
+          <i class='bx bx-x'></i>
+        </div>
+      </div>
+
+      <!-- Carrinho -->
+      <div class="carrinho">
+        <i class='bx bx-cart'></i>
+      </div>
+    </div>
+  </header>
+  <!-- Fim Header -->
+
+  <!-- Sessão de projetos desenvolvidos -->
+  <main class="container">
+  
+    <!-- Projeto Calculadora -->
+    <section class="calculadora">
+      <img src="./img/Calculadora-Foto.png" alt="">
+      <div class="descricao">
+        <div class="tecnologias">
+          <p>HTML | CSS | JavaScript</p>
+        </div>
+        <div class="titulo">
+          <h1><a href="./Projetos/calculadora/calculadora.html">Calculadora Simples</a></h1>
+        </div>
+
+        <p>Esta calculadora é uma ferramenta prática para realizar cálculos básicos, como adição,
+          subtração, multiplicação e divisão. Feita com HTML CSS e JavaScript, para uma adaptação incrivel
+          com o sistema web. Ela tem um design limpo e responsivo.</p>
+      </div>
+    </section>
+
+    <!-- Projeto jogo -->
+    <section class="game">
+      <img src="./img/jogoPackman.PNG" alt="">
+      <div class="descricao">
+        <div class="tecnologias">
+          <p>HTML | JavaScript | Phaser</p>
+        </div>
+        <div class="titulo">
+          <h1><a href="./Projetos/phaser-pacman/index.html">Jogo Packman</a></h1>
+        </div>
+
+        <p>A API Pokedex permite acessar informações detalhadas sobre os Pokémons. Com ela, é possível 
+        obter dados como tipos, habilidades, estatísticas e evoluções. Desenvolvida com uma arquitetura 
+        robusta e escalável, é ideal para integração em diversos projetos web e mobile.</p>
+      </div>
+    </section>
+    
+    <!-- Projeto Pokedex -->
+    <section class="pokedex">
+      <img src="./img/Pokedex.png" alt="">
+      <div class="descricao">
+        <div class="tecnologias">
+          <p>HTML | CSS | JavaScript</p>
+        </div>
+        <div class="titulo">
+          <h1><a href="./Projetos/Pokedex/index.html">API Pokedex</a></h1>
+        </div>
+
+        <p>Este jogo Pacman é uma recriação clássica usando o framework Phaser. 
+        Ele oferece uma jogabilidade fluida e envolvente, com gráficos vibrantes 
+        e controles responsivos. Desenvolvido em JavaScript, com uma interface 
+        intuitiva e design nostálgico.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    
+    <!-- Logo Footer -->
+    <div class="logo-footer">
+        <img src="./img/logo-footer.png" alt="">
+    </div>
+
+    <!-- Link das Redes sociais -->
+    <div class="social">
+        <ul>
+            <!-- Facebook -->
+            <li><a href="https://www.facebook.com/tymotheo.trisch"><i class='bx bxl-facebook'
+                        style='color:#ffffff'></i></a></li>
+            
+            <!-- GitHub -->
+            <li><a href="https://github.com/tymotheoTrisch"><i class='bx bxl-github' style='color:#ffffff'></i></a>
+            </li>
+            
+            <!-- Linkedin -->
+            <li><a href="https://www.linkedin.com/in/tymotheo-da-silva-trisch-de-oliveira-905308275/"><i
+                        class='bx bxl-linkedin' style='color:#ffffff'></i></a></li>
+        </ul>
+    </div>
+</footer>
+<!-- Fim Footer -->
+
+  <script>
+    let boxBuscar = document.querySelector('.buscar-box');
+    let lupa = document.querySelector('.lupa-buscar');
+    let btnfechar = document.querySelector('.btn-fechar');
+
+    lupa.addEventListener('click', () => {
+      boxBuscar.classList.add('ativar');
+    })
+
+    btnfechar.addEventListener('click', () => {
+      boxBuscar.classList.remove('ativar');
+    })
+
+    let carrinho = document.querySelector('.carrinho');
+
+    carrinho.onclick = () => {
+      alert("Nenhum item no carrinho de compras")
+
+    }
+  </script>
+</body>
+
 </html>

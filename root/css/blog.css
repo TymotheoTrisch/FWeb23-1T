@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    padding: 0 150px;
+}
+
+main {
+    height: 80%;
+    background-color: #000;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+section {
+    border-radius: 7px;
+    width: 310px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+    margin-top: 10vh;
+    padding-top: 10px;
+}
+
+section:hover {
+    background-color: #272727;
+    box-shadow: 3px 3px 10px #363636;
+}
+
+section:hover img {
+    border-radius: 10px;
+}
+
+.descricao {
+    width: 280px;
+}
+
+.tecnologias {
+    padding: 20px 5px 0px;
+    color: #71D0FF;
+}
+
+.titulo {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+img {
+    display: block;
+    height: 280px;
+    width: 280px;
+    transition: .5s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 13px;
+}

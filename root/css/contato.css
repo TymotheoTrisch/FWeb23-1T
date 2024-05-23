@@ -1,19 +1,39 @@
-h1 {
-    margin-bottom: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 150px;
+}
+
+main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #F5F5F5;
+}
+
+main ul,
+h2,
+p {
     width: 100%;
 }
 
-header {
-    background-image: url("../img/25101.jpg");
-    background-repeat: no-repeat;
-    height: 200px;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 140px 50px 0;
-    border-bottom: solid 1.5px black;
-    margin-bottom: 20px;
+main ul {
+    padding: 20px 20px;
 }
 
 p:first-letter {
@@ -21,10 +41,16 @@ p:first-letter {
     font-size: 35px;
 }
 
-h1+p {
-    text-indent: 0;
+p {
+    font-size: 16px;
 }
 
-:not(p) + p:first-line {
-    font-variant: small-caps;
+h1,
+h2 {
+    margin: 10px 0;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
 }

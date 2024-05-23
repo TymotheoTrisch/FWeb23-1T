@@ -1,0 +1,105 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 90vh;
+  
+  background: #e0e3eb;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculadora {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: #2f9fff;
+}
+
+.voltar {
+  height: 65px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #000000;
+  /* border: 2px solid #c4c4c4; */
+  transition: .5s;
+}
+
+.voltar:hover {
+  /* background: #e0e3eb; */
+  box-shadow: 3px 3px 7px #2f9fff;
+}
+
+.voltar:hover i {
+  translate: -8px 0px;  
+  /* color: #000; */
+}
+
+i {
+  font-size: 40px;
+  transition: .5s;
+}
+
+/* .voltar2 {
+  height: 65px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2b2b;
+  transition: .5s;
+}
+
+.voltar2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.voltar2 a:hover {
+  text-decoration: underline;
+} */

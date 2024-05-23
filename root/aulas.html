@@ -1,39 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/aulas.css">
-    <title>Exercicio1</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Aulas</title>
 </head>
+
 <body>
-    <main>
+
+    <!-- Header -->
+    <header class="container">
+        
+        <!-- Logo Tesla -->
+        <div class="img-logo">
+            <img src="./img/logo-tesla.svg" alt="Logo-Logomarca">
+        </div>
+        
+        <!-- Info header - parte onde fica a navegação entre as paginas -->
+        <div class="info-header">
+            <nav>
+                <!-- Navegação -->
+                <ul role="list">
+                
+                    <!-- Link Home -->
+                    <li><a href="./index.html">Home</a></li>
+                    
+                    <!-- Link Blog -->
+                    <li><a href="./blog.html">Blog</a></li>
+                    
+                    <!-- Link Contato -->
+                    <li><a href="./contato.html">Contato</a></li>
+                    
+                    <!-- Link Aulas -->
+                    <li class="submenu"><a href="#">Aulas</a>
+                        
+                        <!-- Lista de Aulas -->
+                        <ul>
+                            
+                            <!-- Aula 01 -->
+                            <li class="item"><a href="">Aula 1</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula1/bemvindo.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula1/index.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula1/index2.html">Exercicio 3</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 02 -->
+                            <li class="item"><a href="">Aula 2</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio1.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio2.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio3.html">Exercicio 3</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio4.html">Exercicio 4</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio5.html">Exercicio 5</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio6.html">Exercicio 6</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 09 -->
+                            <li class="item"><a href="">Aula 9</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula9/index.html">Exercicio 1</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 15 -->
+                            <li class="item"><a href="">Aula 15</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula15/ex1/index.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula15/ex2/index.html">Exercicio 2</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 16 -->
+                            <li class="item"><a href="">Aula 16</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula16/ex1/index.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula16/ex2/index.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula16/ex3/index.html">Exercicio 3</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 17 -->
+                            <li class="item"><a href="">Aula 17</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula17/ex1/index.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex2/index.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex3/index.html">Exercicio 3</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex4/index.html">Exercicio 4</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex5/index.html">Exercicio 5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Busca no Goole -->
+            <div class="buscar-box">
+            
+                <!-- Icon Busca -->
+                <div class="lupa-buscar">
+                    <i class='bx bx-search'></i>
+                </div>
+
+                <!-- Input Busca -->
+                <div class="input-buscar">
+                    <input type="text" id="input-buscar" class="input-buscar" placeholder="Pesquisar...">
+                </div>
+
+                <!-- Botão fechar -->
+                <div class="btn-fechar">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Carrinho -->
+            <div class="carrinho">
+                <i class='bx bx-cart'></i>
+            </div>
+        </div>
+    </header>
+    <!-- Fim Header -->
+
+    <!-- Corpo do Site -->
+    <main class="container">
+    
+        <!-- Sessão de aulas -->
         <section>
             <h2>Aulas</h2>
+            
+            <!-- Aula 01 -->
             <details>
                 <summary>Aula 01</summary>
                 <ul type="square">
-                    <li><a href="">Exercicio 01</a></li>
-                    <li><a href="">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula1/bemvindo.html">Exercicio 01</a></li>
+                    <li><a href="./Aulas/Aula1/index.html">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula1/index2.html">Exercicio 03</a></li>
                 </ul>
             </details>
 
+            <!-- Aula 02 -->
             <details>
                 <summary>Aula 02</summary>
                 <ul type="square">
-                    <li><a href="">Exercicio 01</a></li>
-                    <li><a href="">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula2/exercicio1.html">Exercicio 01</a></li>
+                    <li><a href="./Aulas/Aula2/exercicio2.html">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula2/exercicio3.html">Exercicio 03</a></li>
+                    <li><a href="./Aulas/Aula2/exercicio4.html">Exercicio 04</a></li>
+                    <li><a href="./Aulas/Aula2/exercicio5.html">Exercicio 05</a></li>
                 </ul>
             </details>
 
+            <!-- Aula 09 -->
             <details>
-                <summary>Aula 03</summary>
+                <summary>Aula 09</summary>
                 <ul type="square">
-                    <li><a href="">Exercicio 01</a></li>
-                    <li><a href="">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula9/index.html">Exercicio 01</a></li>
+                </ul>
+            </details>
+            
+            <!-- Aula 15 -->
+            <details>
+                <summary>Aula 15</summary>
+                <ul type="square">
+                    <li><a href="./Aulas/Aula15/ex1/index.html">Exercicio 01</a></li>
+                    <li><a href="./Aulas/Aula15/ex2/index.html">Exercicio 02</a></li>
+                </ul>
+            </details>
+            
+            <!-- Aula 16 -->
+            <details>
+                <summary>Aula 16</summary>
+                <ul type="square">
+                    <li><a href="./Aulas/Aula16/ex1/index.html">Exercicio 01</a></li>
+                    <li><a href="./Aulas/Aula16/ex2/index.html">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula16/ex3/index.html">Exercicio 03</a></li>
+                </ul>
+            </details>
+            
+            <!-- Aula 17 -->
+            <details>
+                <summary>Aula 17</summary>
+                <ul type="square">
+                    <li><a href="./Aulas/Aula17/ex1/index.html">Exercicio 01</a></li>
+                    <li><a href="./Aulas/Aula17/ex2/index.html">Exercicio 02</a></li>
+                    <li><a href="./Aulas/Aula17/ex3/index.html">Exercicio 03</a></li>
+                    <li><a href="./Aulas/Aula17/ex4/index.html">Exercicio 04</a></li>
+                    <li><a href="./Aulas/Aula17/ex5/index.html">Exercicio 05</a></li>
                 </ul>
             </details>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="container">
+    
+        <!-- Logo Footer -->
+        <div class="logo-footer">
+            <img src="./img/logo-footer.png" alt="">
+        </div>
+
+        <!-- Link das Redes sociais -->
+        <div class="social">
+            <ul>
+                <!-- Facebook -->
+                <li><a href="https://www.facebook.com/tymotheo.trisch"><i class='bx bxl-facebook'
+                            style='color:#ffffff'></i></a></li>
+                
+                <!-- GitHub -->
+                <li><a href="https://github.com/tymotheoTrisch"><i class='bx bxl-github' style='color:#ffffff'></i></a>
+                </li>
+                
+                <!-- Linkedin -->
+                <li><a href="https://www.linkedin.com/in/tymotheo-da-silva-trisch-de-oliveira-905308275/"><i
+                            class='bx bxl-linkedin' style='color:#ffffff'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
+
+    <!-- Script da Página -->
+    <script>
+        const boxBuscar = document.querySelector('.buscar-box');
+        const lupa = document.querySelector('.lupa-buscar');
+        const btnfechar = document.querySelector('.btn-fechar');
+
+        lupa.addEventListener('click', () => {
+            boxBuscar.classList.add('ativar');
+        })
+
+        btnfechar.addEventListener('click', () => {
+            boxBuscar.classList.remove('ativar');
+        })
+
+        const carrinho = document.querySelector('.carrinho');
+
+        carrinho.onclick = () => {
+            alert("Nenhum item no carrinho de compras")
+
+        }
+    </script>
 </body>
+
 </html>

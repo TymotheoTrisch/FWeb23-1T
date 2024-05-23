@@ -1,0 +1,42 @@
+footer {
+    height: 10%;
+    border-top: #a7a6a6 solid 2px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    height: 50px;
+}
+
+.logo-footer img {
+    height: 100%;
+}
+
+.social {
+    height: 100%;
+}
+
+.social ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.social ul li {
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+    transition: .5s;
+    border: solid 1px;
+}
+
+.social li i {
+    font-size: 40px;
+}
+
+.social li:hover {
+    background-color: #272727;
+}

@@ -1,259 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --cor-fundo: (#000);
+    --cor-primaria: (#f5f5f5);
+    --cor-secundaria: (#272727);
+    --cor-secundaria: (#a7a6a6);
+    --cor-asdasd: (#363636);
+    --cor-fff: (#141414);
+    --cor-qwe: (#)
+}
+
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.carrinho {
-    background: url(../img/carrinho.png) no-repeat top right;
-    background-size: contain;
-    font-size: 17px;
-    padding-right: 55px;
-    height: 50px;
-    text-align: right;
-    width: 300px;
-}
-
-.menu-opcoes ul {
-    font-size: 15px;
-}
-
-.menu-opcoes a {
-    color: #003366;
-}
-
 body {
-    color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-.menu-opcoes ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.carrinho {
-    padding-top: 8px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    width: 940px;
+    width: 100%;
+    padding: 0 150px;
 }
 
-header {
-    position: relative;
+
+
+.images {
+    width: 100%;
+    height: 60%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #a7a6a6;
+
 }
 
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.images img {
+    height: 100%;
 }
 
-.busca,
-.menu-conteudo {
-    background-color: #dcdcdc;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    width: 230px;
-    float: left;
-}
-
-.busca h2,
-.busca form,
-.menu-conteudo h2 {
-    margin: 10px;
-}
-
-.menu-conteudo li {
-    background-color: white;
-    margin-bottom: 1px;
-    padding: 5px 10px;
-}
-
-.menu-conteudo a {
-    color: #333333;
-    text-decoration: none;
-}
-
-.menu-conteudo {
-    padding-top: 10px;
-    clear: left;
-}
-
-.busca input {
-    vertical-align: middle;
-}
-
-.busca input[type=search] {
-    width: 170px;
-}
-
-.destaque {
-    margin-top: 10px;
-    height: 327px;
-}
-
-.menu-conteudo {
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-
-.logo-header {
-    height: 200px;
-}
-
-img {
-    height: 100px;
-}
-
-.icon-busca {
-    height: 20px;
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #000;
 }
 
 .painel {
-    margin: 10px 0;
+    margin: 15px;
     padding: 10px;
-    width: 445px;
-    margin-bottom: 50px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px #999;
-    box-shadow: inset 1px 1px 4px #999;
+    color: #eeee;
+    height: 86%;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
 }
 
-.aula1 {
-    float: left;
-    background-color: #f5dcdc;
-    background: linear-gradient(#f5dcdc, #bebef4);
+.painel ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 5px;
+    list-style: none;
+    height: 100%;
 }
 
-.aula2 {
-    float: right;
-    background-color: #dcdcf5;
-    background: linear-gradient(#dcdcf5, #f4bebe);
-}
 
-.painel li {
-    display: inline-block;
-    vertical-align: top;
-    width: 140px;
-    margin: 2px;
-    padding-bottom: 10px;
+.painel ol li {
+    margin: 5px;
+    height: 95px;
+    width: 130px;
 }
 
 .painel h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-shadow: 3px 3px 2px #FFF;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    margin: 0 15px;
+    height: 30px;
 }
+
+
 
 .painel a {
-    color: #333;
-    font-size: 14px;
-    text-align: center;
     text-decoration: none;
+    color: #a7a6a6a6;
 }
 
-footer {
-    background-size: 50%;
-    padding: 20px 0;
-    clear: both;
-    width: 100%;
-    background-color: #272424;
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.social a {
-    height: 32px;
-    width: 32px;
-    display: block;
-    text-indent: -999999px;
+.painel .tecnologias-ex {
+    background-color: #272727;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.social a[href*="facebook.com"] {
-    background-image: url(../img/facebook.svg);
-    background-size: contain;
+
+
+.tecnologias-ex i {
+    color: #eeee;
+    font-size: 60px;
 }
 
-.social a[href*="twitter.com"] {
-    background-image: url(../img/twitter.svg);
-    background-size: contain;
-}
-
-.social a[href*="github.com"] {
-    background-image: url(../img/github.svg);
-    background-size: contain;
-}
-
-footer .container {
-    position: relative;
-}
-
-.social {
-    position: absolute;
-    top: 10px;
-    right: 0;
-}
-
-.social li {
-    float: left;
-    margin-left: 25px;
-}
-
-.img-footer {
-    height: 50px;
-    width: auto;
-    margin: 5px;
-}
-
-.menu-conteudo a:active {
-    color: #867dc6;
-}
-
-.menu-conteudo li ul {
-    display: none;
-}
-
-.menu-conteudo li:hover ul {
-    display: block;
-}
-
-.menu-conteudo ul ul li {
-    background-color: #dcdcdc;
-}
-
-.menu-conteudo li li a:before {
-    content: '- ';
-}
-
-.busca {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
+figcaption {
+    font-size: 13px;
+} 
 
 .painel li:hover {
-    box-shadow: 0 0 5px #333;
-    transition: box-shadow 0.7s;
+    border-radius: 7px;
+    background-color: #272727;
+    box-shadow: 4px 4px 5px #141414;
+    transition: 0.4s;
 }
 
-.painel li:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 5px #333;
-    transition: 0.7s;
+a:hover:not(.link-aula) {
+    text-decoration: underline;
 }
 
-.painel li:hover {
-    transform: scale(1.2);
-}
-
-.painel li:hover {
-    transform: scale(1.2) rotate(-5deg);
+figcaption:hover {
+    text-decoration: underline;
 }
 

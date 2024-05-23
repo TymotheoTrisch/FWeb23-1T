@@ -2,143 +2,434 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <title>Exercicio1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Home</title>
+    <!-- <i class='bx bxs-file-archive' ></i> -->
 </head>
 
 <body>
-  <header class="container">
-    <h1><img src="img/logo1.jpg" alt="nome_voces" class="logo-header" /></h1>
-    <p class="carrinho">Nenhum item no carrinho de compras</p>
-    <nav class="menu-opcoes">
-      <ul>
-        <li><a href="conteudo.html">Conteúdo</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="container">
+        
+        <!-- Logo Tesla -->
+        <div class="img-logo">
+            <img src="./img/logo-tesla.svg" alt="Logo-Logomarca">
+        </div>
+        
+        <!-- Info header - parte onde fica a navegação entre as paginas -->
+        <div class="info-header">
+            <nav>
+                <!-- Navegação -->
+                <ul role="list">
+                
+                    <!-- Link Home -->
+                    <li><a href="#">Home</a></li>
+                    
+                    <!-- Link Blog -->
+                    <li><a href="./blog.html">Blog</a></li>
+                    
+                    <!-- Link Contato -->
+                    <li><a href="./contato.html">Contato</a></li>
+                    
+                    <!-- Link Aulas -->
+                    <li class="submenu"><a href="./aulas.html">Aulas</a>
+                        
+                        <!-- Lista de Aulas -->
+                        <ul>
+                            
+                            <!-- Aula 01 -->
+                            <li class="item"><a href="">Aula 1</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula1/bemvindo.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula1/index.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula1/index2.html">Exercicio 3</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 02 -->
+                            <li class="item"><a href="">Aula 2</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio1.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio2.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio3.html">Exercicio 3</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio4.html">Exercicio 4</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio5.html">Exercicio 5</a></li>
+                                    <li class="item"><a href="./Aulas/Aula2/exercicio6.html">Exercicio 6</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 09 -->
+                            <li class="item"><a href="">Aula 9</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula9/index.html">Exercicio 1</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 15 -->
+                            <li class="item"><a href="">Aula 15</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula15/ex1/index.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula15/ex2/index.html">Exercicio 2</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 16 -->
+                            <li class="item"><a href="">Aula 16</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula16/ex1/index.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula16/ex2/index.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula16/ex3/index.html">Exercicio 3</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Aula 17 -->
+                            <li class="item"><a href="">Aula 17</a>
+                                <ul>
+                                    <li class="item"><a href="./Aulas/Aula17/ex1/index.html">Exercicio 1</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex2/index.html">Exercicio 2</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex3/index.html">Exercicio 3</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex4/index.html">Exercicio 4</a></li>
+                                    <li class="item"><a href="./Aulas/Aula17/ex5/index.html">Exercicio 5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
-  <div class="container destaque">
-    <section class="busca">
-      <h2>Busca</h2>
-      <form action="https://www.google.com/" id="form-busca">
-        <input type="search" name="q" id="q" />
-        <input type="image" src="img/busca.svg" class="icon-busca" />
-      </form>
+            <!-- Busca no Goole -->
+            <div class="buscar-box">
+            
+                <!-- Icon Busca -->
+                <div class="lupa-buscar">
+                    <i class='bx bx-search'></i>
+                </div>
+
+                <!-- Input Busca -->
+                <div class="input-buscar">
+                    <input type="text" id="input-buscar" class="input-buscar" placeholder="Pesquisar...">
+                </div>
+
+                <!-- Botão fechar -->
+                <div class="btn-fechar">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Carrinho -->
+            <div class="carrinho">
+                <i class='bx bx-cart'></i>
+            </div>
+        </div>
+    </header>
+    <!-- Fim Header -->
+
+    <!-- Container de scroll imagens -->
+    <section class="container images">
+        <div class="image-roll">
+            <img src="./img/carro01.jpg" alt="">
+        </div>
     </section>
-    <!-- fim .busca -->
-    <section class="menu-conteudo">
-      <h2>Aulas</h2>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Aula1</a>
-              <ul>
-                <li><a href="./Aulas/Aula1/bemvindo.html">Exercicio 01</a></li>
-                <li><a href="./Aulas/Aula1/index.html">Exercicio 02</a></li>
-                <li><a href="./Aulas/Aula1/index2.html">Exercicio 03</a></li>
-              </ul>
-          </li>
-          <li>
-            <a href="#">Aula2</a>
+
+    <!-- Container de Aulas - Aulas -->
+    <main class="container aulas">
+    
+        <!-- Aula 01 -->
+        <section class="painel">
+            <h2>Aula 1</h2>
+            <ol>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula1/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                            </div>
+                            <figcaption>Exercicio 1 HTML</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula1/bemvindo.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                            </div>
+                            <figcaption>Exercicio 2 HTML</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula1/index2.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                            </div>
+                            <figcaption>Exercicio 3 HTML</figcaption>
+                        </figure>
+                    </a>
+                </li>
+
+            </ol>
+        </section>
+        
+        <!-- Aula 02 -->
+        <section class="painel">
+            <h2>Aula 2</h2>
+            <ol>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula2/exercicio1.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <figcaption>Exercicio 2 CSS</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula2/exercicio2.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <figcaption>Exercicio 2 CSS</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula2/exercicio3.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <figcaption>Exercicio 3 CSS</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula2/exercicio3.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <figcaption>Exercicio 4 CSS</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula2/exercicio3.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <figcaption>Exercicio 5 CSS</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula2/exercicio3.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                            <figcaption>Exercicio 6 CSS</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- Aula 09 -->
+        <section class="painel">
+            <h2>Aula 9</h2>
+            <ol>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula9/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                            </div>
+                            <figcaption>Exercicio 1</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- Aula 15 -->
+        <section class="painel">
+            <h2>Aula 15</h2>
+            <ol>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula15/ex1/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxs-file-json'></i>
+                            </div>
+                            <figcaption>Exercicio 1 JSON</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula15/ex2/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxs-file-json'></i>
+                            </div>
+                            <figcaption>Exercicio 2 JSON</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- Aula 16 -->
+        <section class="painel">
+            <h2>Aula 16</h2>
+            <ol>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula16/ex1/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-jquery'></i>
+                            </div>
+                            <figcaption>Exercicio 1 JQuery</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula16/ex2/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-jquery'></i>
+                            </div>
+                            <figcaption>Exercicio 2 JQuery</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula16/ex3/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-jquery'></i>
+                            </div>
+                            <figcaption>Exercicio 3 JQuery</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- Aula 17 -->
+        <section class="painel">
+            <h2>Aula 17</h2>
+            <ol>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula17/ex1/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-angular'></i>
+                            </div>
+                            <figcaption>Exercicio 1 Angular</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula17/ex2/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-angular'></i>
+                            </div>
+                            <figcaption>Exercicio 2 Angular</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula17/ex3/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-angular'></i>
+                            </div>
+                            <figcaption>Exercicio 3 Angular</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula17/ex4/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-angular'></i>
+                            </div>
+                            <figcaption>Exercicio 4 Angular</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-aula" href="./Aulas/Aula17/ex5/index.html">
+                        <figure>
+                            <div class="tecnologias-ex">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-angular'></i>
+                            </div>
+                            <figcaption>Exercicio 5 Angular</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="container">
+    
+        <!-- Logo Footer -->
+        <div class="logo-footer">
+            <img src="./img/logo-footer.png" alt="">
+        </div>
+
+        <!-- Link das Redes sociais -->
+        <div class="social">
             <ul>
-              <li><a href="./Aulas/Aula2/exercicio1.html">Exercicio 01</a></li>
-              <li><a href="./Aulas/Aula2/exercicio2.html">Exercicio 02</a></li>
-              <li><a href="./Aulas/Aula2/exercicio3.html">Exercicio 03</a></li>
-              <li><a href="./Aulas/Aula2/exercicio4.html">Exercicio 04</a></li>
-              <li><a href="./Aulas/Aula2/exercicio5.html">Exercicio 05</a></li>
-            </ul>  
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <!-- fim .menu-conteudo -->
-    <img src="./img/destaque-home.jpg" alt="Imagem de destaque" />
-    <a href="#" class="pause">Pausar/Reproduzir</a>
-  </div>
-  <!-- fim .container .destaque -->
+                <!-- Facebook -->
+                <li><a href="https://www.facebook.com/tymotheo.trisch"><i class='bx bxl-facebook'
+                            style='color:#ffffff'></i></a></li>
+                
+                <!-- GitHub -->
+                <li><a href="https://github.com/tymotheoTrisch"><i class='bx bxl-github' style='color:#ffffff'></i></a>
+                </li>
+                
+                <!-- Linkedin -->
+                <li><a href="https://www.linkedin.com/in/tymotheo-da-silva-trisch-de-oliveira-905308275/"><i
+                            class='bx bxl-linkedin' style='color:#ffffff'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
 
-  <div class="container">
-    <section class="painel aula1">
-      <h2>Aula 1</h2>
-      <ol>
-        <!-- primeiro exercicio -->
-        <li>
-          <a href="./Aulas/Aula1/index.html">
-            <figure>
-              <img src="img/html.png" />
-              <figcaption>Exercicio 1 HTML</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="./Aulas/Aula1/bemvindo.html">
-            <figure>
-              <img src="img/html.png" />
-              <figcaption>Exercicio 2 HTML</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="./Aulas/Aula1/index2.html">
-            <figure>
-              <img src="img/html.png" />
-              <figcaption>Exercicio 3 HTML</figcaption>
-            </figure>
-          </a>
-        </li>
-        <!-- coloque mais exercicios aqui! -->
-      </ol>
-    </section>
 
-    <section class="painel aula2">
-      <h2>Aula 2</h2>
-      <ol>
-        <li>
-          <a href="./Aulas/Aula2/exercicio1.html">
-            <figure>
-              <img src="img/css.png" />
-              <figcaption>Exercicio 1 CSS</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="./Aulas/Aula2/exercicio2.html">
-            <figure>
-              <img src="img/css.png" />
-              <figcaption>Exercicio 2 CSS</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="./Aulas/Aula2/exercicio3.html">
-            <figure>
-              <img src="img/css.png" />
-              <figcaption>Exercicio 3 CSS</figcaption>
-            </figure>
-          </a>
-        </li>
-      </ol>
-    </section>
-  </div>
-
-  <section id="main"><!-- Conteúdo principal --></section>
-  <footer>
-    <div class="container">
-      <img src="img/logo-footer.png" alt="Logo site" class="img-footer" />
-      <ul class="social">
-        <li><a href="http://facebook.com/">Facebook</a></li>
-        <li><a href="http://twitter.com/">Twitter</a></li>
-        <li><a href="http://github.com/">GitHub</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="js/home.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
