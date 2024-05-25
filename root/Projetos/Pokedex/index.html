@@ -1,44 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Links -->
-  <link rel="icon" href="./favicons/favicon-16x16.png">
-  <link rel="stylesheet" href="./css/style.css">
-
-  <!-- Main JS -->
-  <script defer src="./js/script.js"></script>
-
-  <title>Pokédex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <title>Pokedex</title>
 </head>
+
 <body>
-  
-  <main>
-    <img src="#" alt="pokemon" class="pokemon__image">
 
-    <h1 class="pokemon__data">
-      <span class="pokemon__number"></span> -
-      <span class="pokemon__name"></span>
-    </h1>
-
-    <form class="form">
-      <input
-        type="search"
-        class="input__search"
-        placeholder="Name or Number"
-        required
-      />
-    </form>
-
-    <div class="buttons">
-      <button class="button btn-prev">Prev &lt;</button>
-      <button class="button btn-next">Next &gt;</button>
+    <div class="pesquisar">
+        <input type="text" placeholder="Pesquisar..." id="input-pesquisar">
+        <i class='bx bx-search' id="pesquisar"></i>
     </div>
 
-    <img src="./image/pokedex.png" alt="pokedex" class="pokedex">
-  </main>
+
+    <main class="pokedex">
+        <div class="prev" id="prev">
+            <i class='bx bx-chevron-left'></i>
+        </div>
+        <section class="container">
+            <div class="titulo">
+                <img src="./img/pokemon.png" alt="">
+                <h1>Pokedex <span id="number">- 132</span></h1>
+            </div>
+
+            <div class="conteudo-pokemon">
+                <div class="nome">
+                    <h2>Nome</h2>
+                    <h2 id="nome">ditto</h2>
+                </div>
+
+                <div class="habilidades">
+                    <div class="titulo-detalhe">
+                        <h2>Habilidades</h2>
+                    </div>
+                    <ul id="habilidades">
+                    
+                    </ul>
+                </div>
+
+                <div class="estatisticas">
+                    <div class="titulo-detalhe">
+                        <h2>Estatísticas</h2>
+                    </div>
+                    <ul class="stats" id="estatisticas">
+                        <li class="stat hp">
+
+                            <div class="estatistica">
+                                <h3>hp</h3>
+                                <span>0</span>
+                            </div>
+
+                            <progress value="0" max="100"></progress>
+
+                        </li>
+                        <li class="stat atk">
+                            <div class="estatistica">
+                                <h3>atk</h3>
+                                <span>0</span>
+                            </div>
+                            <progress value="0" max="100"></progress>
+
+                        </li>
+                        <li class="stat def">
+                            <div class="estatistica">
+                                <h3>def</h3>
+                                <span>0</span>
+                            </div>
+                            <progress value="0" max="100"></progress>
+
+                        </li>
+                        <li class="stat satk">
+                            <div class="estatistica">
+                                <h3>satk</h3>
+                                <span>0</span>
+                            </div>
+                            <progress value="0" max="100"></progress>
+
+                        </li>
+                        <li class="stat sdef">
+                            <div class="estatistica">
+                                <h3>sdef</h3>
+                                <span>0</span>
+                            </div>
+                            <progress value="0" max="100"></progress>
+
+                        </li>
+                        <li class="stat spd">
+                            <div class="estatistica">
+                                <h3>spd</h3>
+                                <span>0</span>
+                            </div>
+                            <progress value="0" max="100"></progress>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lado-dir">
+                <div class="image">
+                    <img id="image"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/132.png"
+                        alt="">
+                </div>
+
+                <div class="info">
+                    <div class="titulo-detalhe">
+                        <h2>Detalhes</h2>
+                    </div>
+
+                    <div class="itens">
+                        <div class="item altura">
+                            <h3>Altura</h3>
+                            <span>70 cm</span>
+                        </div>
+                        <div class="item peso">
+                            <h3>Peso</h3>
+                            <span>6.9 kg</span>
+                        </div>
+                        <div class="item tipo">
+                            <h3>Tipo</h3>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="som">
+                <i class='bx bx-volume-full'></i>
+            </div>
+        </section>
+        <div class="prox" id="prox">
+            <i class='bx bx-chevron-right'></i>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
 
 </body>
+
 </html>

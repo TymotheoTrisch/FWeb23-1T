@@ -1,94 +1,423 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Oxanium', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    color: #fff;
 }
 
+/* Body */
 body {
-  text-align: center;
-  background: linear-gradient(to bottom, #6ab7f5, #fff);
-  min-height: 100vh;
-}
-
-main {
-  display: inline-block;
-  margin-top: 2%;
-  padding: 15px;
-  position: relative;
-}
-
-.pokedex {
-  width: 100%;
-  max-width: 425px;
-}
-
-.pokemon__image {
-  position: absolute;
-  bottom: 55%;
-  left: 50%;
-  transform: translate(-63%, 20%);
-  height: 18%;
-}
-
-.pokemon__data {
-  position: absolute;
-  font-weight: 600;
-  color: #aaa;
-  top: 54.5%;
-  right: 27%;
-  font-size: clamp(8px, 5vw, 25px);
-}
-
-.pokemon__name {
-  color: #3a444d;
-  text-transform: capitalize;
-}
-
-.form {
-    position: absolute;
-    width: 65%;
-    top: 65%;
-    left: 13.5%;
-}
-
-.input__search {
-    width: 100%;
-    padding: 4%;
-    outline: none;
-    border: 2px solid #333;
-    border-radius: 5px;
-    font-weight: 600;
-    color: #3a444d;
-    font-size: clamp(8px, 5vw, 1rem);
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
-}
-
-.buttons {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    width: 65%;
-    transform: translate(-57%, 0);
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    background: url('../img/pokeball-gray.svg'), url('../img/pokeball-gray.svg');
+    background-repeat: no-repeat;
+    background-position: 60vw 10px, 10vw 600px;
+    background-size: 70vh, 50vh;
+    background-color: #797979e5;
 }
 
-.button {
-    width: 50%;
-    padding: 4%;
-    border: 2px solid #000;
-    border-radius: 5px;
-    font-size: clamp(8px, 5vw, 1rem);
-    font-weight: 600;
-    color: white;
-    background-color: #444;
-    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
-  }
-  
-  .button:active {
-    box-shadow: inset -4px 4px 0 #222;
-    font-size: 0.9rem;
-  }
+/* Fim Body */
+
+/* Pesquisar */
+.pesquisar {
+    height: fit-content;
+    margin: 0 45vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: #30333ae5;
+}
+
+.pesquisar input {
+    border: none;
+    height: 37px;
+    width: 250px;
+    font-size: 20px;
+    outline: none;
+    color: #838488;
+    background-color: transparent;
+}
+
+.pesquisar i {
+    color: #838488;
+    cursor: pointer;
+}
+
+/* Fim Pesquisar */
+
+/* Pokedex */
+.pokedex {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+/* Fim Pokedex */
+
+
+/* Main */
+.container {
+    background-color: #30333aab;
+    width: min(70vw, 985px);
+    height: 76vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 0 5vw;
+    margin-top: 7vh;
+}
+
+.container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.507);
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    z-index: -1;
+}
+
+/* Titulo */
+.titulo {
+    position: absolute;
+    display: flex;
+    width: calc(100% - 10px);
+    left: 0;
+    top: -10px;
+    background-color: #000000d2;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.titulo h1 {
+    display: flex;
+    align-items: center;
+}
+
+.titulo span {
+    font-size: 25px;
+    color: #838488;
+
+}
+
+.titulo img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+/* Fim Titulo */
+
+/* Conteudo do Pokemon */
+.conteudo-pokemon {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    width: min(35vw, 420px);
+}
+
+/* Nome */
+.nome {
+    display: flex;
+    gap: 30px;
+}
+
+.nome>h2 {
+    background-color: #1f1f1fcc;
+    padding: 10px;
+}
+
+.nome h2:nth-child(2) {
+    width: min(35vw, 420px);
+}
+
+/* Fim Nome */
+
+/* habilidades */
+.habilidades {
+    margin-top: 3vh;
+    background-color: #1f1f1fcc;
+}
+
+
+/* Estilização ul */
+ul {
+    list-style: none;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+/* Fim ul */
+
+.hab {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #5c5c5ccc;
+    transition: .5s;
+    font-size: min(2vw, 16px);
+}
+
+.hab {
+    margin-left: 15px;
+}
+
+.hab:nth-child(1) {
+    margin-left: 0;
+}
+
+
+/* Fim habilidades */
+
+/* Estatisticas */
+.estatisticas {
+    margin-top: 3vh;
+    background-color: #1f1f1fcc;
+
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.stat {
+    margin-left: 0;
+    width: fit-content;
+}
+
+progress {
+    width: min(14vw, 160px);
+}
+
+/* .estatisticas ul {
+    width: 100%;
+    justify-content: space-between;
+} */
+
+.estatistica {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Fim Estatisticas */
+
+
+.titulo-detalhe {
+    background-color: #838488;
+    padding: 10px 15px;
+}
+
+/* Fim do Pokemon */
+
+/* Fim lado Esquerdo */
+
+/* Lado Direito */
+.lado-dir {
+    margin-top: 7vh;
+    width: 20vw;
+}
+
+/* Imagem */
+.image {
+    width: 100%;
+    height: 25.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1fa9;
+    margin-bottom: 4vh;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Fim Imagem */
+
+.info {
+    background-color: #1f1f1fb7;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Som */
+.som {
+    font-size: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    cursor: pointer;
+}
+
+/* Fim Som */
+
+.info .titulo-detalhe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .itens {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.info .item {
+    padding: 15px 0;
+}
+
+span {
+    font-size: 14px;
+}
+
+/* Fim lado Direito */
+/* Fim Main */
+
+/* Prev, prox */
+
+/* Prev */
+.prev,
+.prox {
+    padding: 15px;
+    font-size: 30px;
+    height: 6vh;
+    background-color: #30333ae5;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.prev::before,
+.prox::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.788);
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    z-index: -1;
+}
+
+h3 {
+    font-size: min(3vw, 18px);
+}
+
+@media (max-width: 800px) {
+    body {
+        background-position: 40vw 10px, -10vw 600px;
+
+        background-size: 70vh;
+    }
+
+    .pesquisar {
+        margin: 0;
+        margin-top: 5vh;
+    }
+
+    .pokedex {
+        height: 80vh;
+        width: fit-content;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        margin-top: 6vh;
+        padding: 25px;
+    }
+
+    .container::before {
+        display: none;
+    }
+
+    .titulo {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    #habilidades {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .hab {
+        margin-left: 0;
+    }
+
+    .conteudo-pokemon,
+    .lado-dir {
+        width: 40vw;
+    }
+
+    progress {
+        width: 15vw;
+    }
+
+    .prev,
+    .prox {
+        position: fixed;
+        bottom: 0;
+        width: 50%;
+        height: 7vh;
+        border: 1px solid #30333ae5;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .prox {
+        right: 0;
+    }
+
+    .prev::before,
+    .prox::before {
+        display: none;
+    }
+
+    .prev i,
+    .prox i {
+        margin: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    progress {
+        width: 13vw;
+    }
+
+
+}
