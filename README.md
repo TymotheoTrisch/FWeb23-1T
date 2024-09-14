@@ -18,11 +18,11 @@ Não há dependências externas necessárias.
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/fweb23-1t.git
+   git clone https://github.com/TymotheoTrisch/FWeb23-1T.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
-   cd fweb23-1t
+   cd FWeb23-1T
    ```
 3. Abra o arquivo `index.html` diretamente no seu navegador.
 
